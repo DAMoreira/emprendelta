@@ -1,0 +1,43 @@
+/*start/index.jsp*/
+#startSave #sectionList .glyphicon{padding:3px !important}
+/*newsItem.jsp*/
+.table#newsItem-versionInfo tbody tr td{padding:2px;text-transform:uppercase;font-size:10px}
+.note-editor.fullscreen .note-editable{color: #fff;background: #111;font-size: 200%;}
+/*ad list*/
+#ad-list .thumbnail{background-color:rgba(255,255,255,0.2)}
+/*modalAd.jsp*/
+.carousel-inner>.item>img{height:200px;margin: 0 auto;}
+.carousel-indicators{bottom:-30px;}
+.carousel-indicators li{border-color:orangered;}
+.carousel-indicators li.active{background-color:red;}
+.nav-pills .glyphicon-chevron-down{padding:0;}
+/*myProfile.jsp*/
+span.facebook{background: url(/img/social/facebook_icon.png) -5px -2px;width: 32px;}
+span.twitter{background: url(/img/social/twitter_icon.png) -4px -2px;width: 32px;}
+span.linkedin{background: url(/img/social/linkedin.png) 0px 0px;width: 32px;}
+span.googleplus{background: url(/img/social/googleplus.png) -1px 0px;width: 32px;}
+/*sections.jsp*/
+#sectionList .glyphicon{padding:10px;cursor:pointer}
+#sectionList .glyphicon:hover{background-color:rgba(0,0,0,0.95);color:#fff;opacity:0.5;}
+.glyphicon-ok{color:green}
+.glyphicon-trash{color:red}
+#sectionList input[type=text]{width:85%;display: inline;}
+#addSection{padding:5% 0;}
+/*widgetItem.jsp*/
+.note-editor.fullscreen .note-editable{color: #fff;background: #111;font-size: 200%;}
+.glyphicon-new-window{cursor:pointer}
+/*widgets.jsp*/
+div.input-group{width: 100%;text-align: center;/*margin: 2em 0;*/}
+input[type=text]{display:inline;}
+/*loginButtons.jsp*/
+#social-buttons td{padding: 8px;}
+/*collaborators.jsp*/
+#addCollaboratorForm .p-15 input,#addCollaboratorForm .p-15 textarea{width:100%}
+/*global*/
+#main-alert{margin:auto;text-align:center;display:none;border:solid 2px #f0c36d;color:#222;background-color:#f9edbe}
+/*Modal Layout*/
+.layoutSelected{background:rgba(0,255,0,0.3)!important}
+#newLayoutName{width:100%}
+.HOME{background:url(/img/icon/home.png) no-repeat 1em}
+.list-group-item>a{cursor:pointer}
+#layoutTypeSelector>.active{background-color:#999}

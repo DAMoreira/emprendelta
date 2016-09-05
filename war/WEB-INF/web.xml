@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+    
+    <filter>
+		<filter-name>ObjectifyFilter</filter-name>
+		<filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ObjectifyFilter</filter-name>
+		<url-pattern>/*</url-pattern> 
+	</filter-mapping>
+    
+    <filter>
+	    <filter-name>struts2</filter-name>
+	    <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+			
+	<listener>
+		<listener-class>org.utn.frd.lsi.InitListener</listener-class>
+	</listener>
+
+	<security-constraint>
+        <web-resource-collection>
+            <web-resource-name>login</web-resource-name>
+            <url-pattern>/socialauth</url-pattern>
+            <url-pattern>/oauth2callback</url-pattern>
+        </web-resource-collection>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	
+	<servlet>
+	    <servlet-name>manualDelEmprendedor</servlet-name>
+	    <jsp-file>/manualDelEmprendedor.jsp</jsp-file>
+	</servlet>
+	<!--mapping-->
+	<servlet-mapping>
+	    <servlet-name>manualDelEmprendedor</servlet-name>
+	    <url-pattern>/manual-del-emprendedor</url-pattern>   
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>materialDeInteres</servlet-name>
+	    <jsp-file>/materialDeInteres.jsp</jsp-file>
+	</servlet>
+	<!--mapping-->
+	<servlet-mapping>
+	    <servlet-name>materialDeInteres</servlet-name>
+	    <url-pattern>/material-de-interes</url-pattern>   
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>novedades</servlet-name>
+	    <jsp-file>/novedades.jsp</jsp-file>
+	</servlet>
+	<!--mapping-->
+	<servlet-mapping>
+	    <servlet-name>novedades</servlet-name>
+	    <url-pattern>/novedades</url-pattern>   
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>registroDeEmprendedores</servlet-name>
+	    <jsp-file>/registroDeEmprendedores.jsp</jsp-file>
+	</servlet>
+	<!--mapping-->
+	<servlet-mapping>
+	    <servlet-name>registroDeEmprendedores</servlet-name>
+	    <url-pattern>/registro-de-emprendedores</url-pattern>   
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>contacto</servlet-name>
+	    <jsp-file>/contacto.jsp</jsp-file>
+	</servlet>
+	<!--mapping-->
+	<servlet-mapping>
+	    <servlet-name>contacto</servlet-name>
+	    <url-pattern>/contacto</url-pattern>   
+	</servlet-mapping>
+	
+	
+</web-app>

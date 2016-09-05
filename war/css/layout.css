@@ -1,0 +1,53 @@
+body{
+	margin:0;
+	padding: 0;
+	background: #ddd;
+}
+#main{
+	width:80%;
+	margin: 0 auto;
+	background: white;
+	min-height: 20px;
+}
+
+.container1{
+	float:left;
+	width:100%;
+	background: green;
+	overflow: hidden;
+}
+.container2{
+	float:left;
+	width:100%;
+	background: yellow;
+	position: relative;
+	right: 30%;
+}
+.container3{
+	float:left;
+	width:100%;
+	background: orange;
+	position: relative;
+	right: 40%;
+}
+.col1{
+	float: left;
+	padding: 2%;
+	width: 26%;
+	position: relative;
+	left: 70%;
+}
+.col2{
+	float: left;
+	padding: 2%;
+	width: 36%;
+	position: relative;
+	left: 70%;
+}
+.col3{
+	float: left;
+	padding: 2%;
+	width: 26%;
+	position: relative;
+	left: 70%;
+}

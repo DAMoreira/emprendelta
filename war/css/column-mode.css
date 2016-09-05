@@ -1,0 +1,18 @@
+.portlet-opaco{
+	opacity: 0.5;
+//	visibility: hidden;
+}
+#main .row{
+	border-bottom: solid 1px;
+}
+#main div[class*=col-md-]{
+	background: #993;
+	min-height:20px;
+}
+#main div[class*=col-md-]:hover{
+	cursor: pointer;
+	background: #996;
+}
+.tdh-contaier{
+	border-bottom: solid 1px;
+}

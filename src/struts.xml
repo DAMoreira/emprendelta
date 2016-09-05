@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="user" namespace="/" extends="json-default">
+		<interceptors>
+		    <interceptor name="authentication" class="org.utn.frd.lsi.interceptor.AuthenticationInterceptor"></interceptor>
+		    <interceptor-stack name="authStack">
+		        <interceptor-ref name="authentication"></interceptor-ref>
+		        <interceptor-ref name="defaultStack"></interceptor-ref>
+		    </interceptor-stack>
+		</interceptors>
+		
+		<default-interceptor-ref name="authStack"></default-interceptor-ref>
+        <global-results>
+            <result name="login" type="redirect">/login</result>
+            <result name="unauthorized" type="redirect">/unauthorized</result>
+        </global-results>
+
+	</package>
+    	
+    <constant name="struts.action.excludePattern" value="/_ah/.*"/>
+	<constant name="struts.convention.result.path" value="/"></constant> 
+	<constant name="struts.ui.theme" value="bootstrap" />
+	<constant name="struts.ui.templateDir" value="resources/template" />
+	<constant name="struts.action.extension" value=""/> 
+	<constant name="struts.custom.i18n.resources" value="global" />
+	
+
+</struts>
