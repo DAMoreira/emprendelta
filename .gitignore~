@@ -6,6 +6,7 @@ war/WEB-INF/appengine-generated/*
 
 # eclipse specific git ignore
 *.pydevproject
+.project
 .metadata
 bin/**
 tmp/**
@@ -15,6 +16,7 @@ tmp/**/*
 *.swp
 *~.nib
 local.properties
+.classpath
 .settings/
 .loadpath
 
